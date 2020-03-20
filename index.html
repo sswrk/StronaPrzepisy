@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <meta charset="utf8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePrzepisy</title>
+</head>
+<body>
+
+        <button class="open-button" type="button" onclick="openForm()">+</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1>Dodaj przepis</h1>
+
+              <p id="notFilled"></p>
+          
+              <label for="title"><b>Nazwa dania</b></label>
+			  <input id="title" type="text" placeholder="Wpisz nazwę" name="title" required>
+          
+              <label for="url1"><b>Link do zdjęcia</b></label>
+              <input id="url1" type="text" placeholder="Link do zdjęcia 1" name="url1">
+
+              <label for="url2"><b>Link do zdjęcia</b></label>
+              <input id="url2" type="text" placeholder="Link do zdjęcia 2" name="url1">
+
+              <label for="directions"><b>Treść</b></label>
+			  <textarea id="directions" type="text" placeholder="Tresc przepisu" name="directions" required></textarea>
+          
+              <button type="button" class="btn" onclick="addRecipe()">Dodaj</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Anuluj</button>
+            </form>
+          </div>
+
+    <div class="topnav">
+            <div class="logo">
+                    <a href="#">ePrzepisy</a>
+                </div>
+        <div class="nav">
+            <a class="active" href="#pizza">Przepisy</a>
+            <a href="#footer">Kontakt</a>
+            <a href="#footer">O nas</a>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="przywitanie">
+            <h1>Tysiące przepisów dla ciebie!</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac gravida massa, in pretium nibh. Nam sagittis ex diam, sit amet fringilla ante pharetra non. Aenean imperdiet diam at dapibus lobortis.
+            </p>
+            <a href="#pizza"><button id="b1">Sprawdź!</button></a>
+        </div>
+        <div class="przepispizza">
+            <h1>Doskonała domowa pizza</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac gravida massa, in pretium nibh. Nam sagittis ex diam, sit amet fringilla ante pharetra non. Aenean imperdiet diam at dapibus lobortis.
+            </p>
+        </div>
+        <div class=pizza id="pizza">
+            <a href="#"><img src="pizza.jpg"></a>
+        </div>
+        <div class="przepiszupa">
+                <div class="collapsible" id="item-1">
+                    
+                    <div class="flip-box">
+                        
+                        <div class="flip-box-inner" id="flip-card1">
+                          <div class="flip-box-front">
+                            <img src="pomidorowa.png" onclick="gg(1)" id="imgf1">
+                          </div>
+                          <div class="flip-box-back">
+                            <img src="pomidorowa2.jpg" onclick="gg(1)" id="imgb1">
+                          </div>
+                        </div>
+                      </div>
+                    <h1>Pomidorowa</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac gravida massa, in pretium nibh. Nam sagittis ex diam, sit amet fringilla ante pharetra non. Aenean imperdiet diam at dapibus lobortis.
+                    </p>
+                </div>
+            </div>
+        <div class="przepismakaron">
+                <div class="collapsible" id="item-2">
+                    
+                        <div class="flip-box">
+                        
+                                <div class="flip-box-inner" id="flip-card2">
+                                  <div class="flip-box-front">
+                                    <img src="makaron.jpg" onclick="gg(2)" id="imgf2">
+                                  </div>
+                                  <div class="flip-box-back">
+                                    <img src="makaron.jpg" onclick="gg(2)" id="imgb2">
+                                  </div>
+                                </div>
+                              </div>
+                    <h1>Makaron</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac gravida massa, in pretium nibh. Nam sagittis ex diam, sit amet fringilla ante pharetra non. Aenean imperdiet diam at dapibus lobortis.
+                    </p>
+                </div>
+            </div>
+        <div class="przepispierogi">
+                <div class="collapsible" id="item-3">
+                    
+                    <div class="flip-box">
+                        
+                            <div class="flip-box-inner" id="flip-card3">
+                              <div class="flip-box-front">
+                                <img src="pierogi.jpg" onclick="gg(3)" id="imgf3">
+                              </div>
+                              <div class="flip-box-back">
+                                <img src="pierogi.jpg" onclick="gg(3)" id="imgb3">
+                              </div>
+                            </div>
+                          </div>
+                    <h1>Pierogi</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac gravida massa, in pretium nibh. Nam sagittis ex diam, sit amet fringilla ante pharetra non. Aenean imperdiet diam at dapibus lobortis.
+                    </p>
+                </div>
+            </div>
+        <div class="ciasto">
+                <div class="collapsible" id="item-4">
+                    
+                    
+                    <div class="flip-box">
+                        
+                            <div class="flip-box-inner" id="flip-card4">
+                              <div class="flip-box-front">
+                                <img src="ciasto.jpg" onclick="gg(4)" id="imgf4">
+                              </div>
+                              <div class="flip-box-back">
+                                <img src="ciasto.jpg" onclick="gg(4)" id="imgb4">
+                              </div>
+                            </div>
+                          </div>
+                    <h1>Ciasto</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac gravida massa, in pretium nibh. Nam sagittis ex diam, sit amet fringilla ante pharetra non. Aenean imperdiet diam at dapibus lobortis.
+                    </p>
+                </div>
+            </div>
+        <div class="kanapki">
+            <div class="collapsible" id="item-5">
+                <div class="flip-box">
+                        
+                        <div class="flip-box-inner" id="flip-card5">
+                          <div class="flip-box-front">
+                            <img src="kanapki.jpg" onclick="gg(5)" id="imgf5">
+                          </div>
+                          <div class="flip-box-back">
+                            <img src="kanapki.jpg" onclick="gg(5)" id="imgb5">
+                          </div>
+                        </div>
+                      </div>
+                <h1>Kanapki</h1>
+            </div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac gravida massa, in pretium nibh. Nam sagittis ex diam, sit amet fringilla ante pharetra non. Aenean imperdiet diam at dapibus lobortis.
+                </p>
+            </div>
+        </div>
+        <div class="grid2" id="grid2">
+            
+        </div>
+        <div class="footer1" id="footer">
+            <p> © ePrzepisy</p>
+        </div>
+        <div class="footer3">
+            <ul id="social">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#""><img src="instagram.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+            </ul>
+        </div> 
+        <div class="footer2">
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,660 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #746D75;
+    color: #EDE6F2;
+}
+
+h1 {
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    line-height: 46px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 0 0 43px 0;
+}
+
+p {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 3px;
+    margin: 0 0 23px 0;
+    opacity: 0.9;
+}
+
+img {
+	/*-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;*/
+    border-radius: 5%;
+}
+
+/*img:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}*/
+
+.topnav {
+    background-color: #252627;
+    overflow: hidden;
+  }
+  
+  .nav a {
+    float: right;
+    color: #EDE6F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a:hover {
+    background-color: #EDE6F2;
+    color: #252627;
+  }
+  
+  .nav a.active {
+    background-color: #8ACDEA;
+    color: #252627;
+  }
+
+  .logo a {
+    font-family: 'Lobster', Georgia, Times, serif;
+    float: left;
+    color: #EDE6F2;
+    text-align: center;
+    padding: 4px 7px;
+    text-decoration: none;
+    font-size: 31px;
+    margin-left: 5px;
+  }
+  
+  .logo a:hover {
+    color: #8ACDEA;
+  }
+
+button {
+    background-color: #252627;
+    border: none;
+    color: #EDE6F2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#b0 {
+    margin-top: -30px;
+    margin-right: 15px;
+    float:right;
+}
+
+button:hover {
+    background-color: #EDE6F2;
+    color: #252627;
+}
+
+.grid2{
+    background-color: #A83F3F;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 1101px){
+
+.grid {
+    margin: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-areas:
+        "przywitanie przywitanie przywitanie przywitanie przywitanie "
+        "pizza pizza pizza pizzajpg pizzajpg"
+        "pomidorowa kanapki makaron pierogi ciasto"
+        "grid2 grid2 grid2 grid2 grid2"
+        "f2 f2 f1 f3 f3";
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-content: center;
+
+    
+}
+
+.footer1{
+    grid-area: f1;
+    background-color: #252627;
+    text-align: center;
+    padding-top: 6%;
+}
+
+.grid2{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-area: grid2;
+}
+
+}
+
+@media screen and (max-width: 1100px){
+    
+    .grid{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-areas:
+        "przywitanie przywitanie przywitanie"
+        "pizzajpg pizzajpg pizza"
+        "kanapki ciasto pomidorowa"
+        "makaron pierogi pierogi"
+        "grid2 grid2 grid2"
+        "f2 f1 f3";
+    grid-template-columns: 34% 33% 33%;
+    align-content: center;
+    }
+
+    .footer1{
+        grid-area: f1;
+        background-color: #252627;
+        text-align: center;
+        padding-top: 6%;
+    }
+
+    .grid2{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-area: grid2;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .grid{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-areas:
+        "przywitanie przywitanie"
+        "pizzajpg pizzajpg"
+        "pizza pizza"
+        "kanapki makaron"
+        "ciasto pierogi"
+        "pomidorowa pomidorowa"
+        "grid2 grid2"
+        "f1 f3";
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    }
+
+    .footer1{
+        grid-area: f1;
+        background-color: #252627;
+        text-align: left;
+        padding-top: 6%;
+        padding-left: 5%;
+    }
+
+    .grid2{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-area: grid2;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    
+    .grid{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-areas:
+        "przywitanie przywitanie"
+        "pizzajpg pizzajpg"
+        "pizza pizza"
+        "pomidorowa pomidorowa"
+        "kanapki kanapki"
+        "makaron makaron"
+        "pierogi pierogi"
+        "ciasto ciasto"
+        "grid2 grid2"
+        "f1 f3";
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    }
+
+    .footer1{
+        grid-area: f1;
+        background-color: #252627;
+        text-align: left;
+        padding-top: 6%;
+        padding-left: 5%;
+    }
+
+    .grid2{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-area: grid2;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    
+    .grid{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-areas:
+        "przywitanie przywitanie"
+        "pizzajpg pizzajpg"
+        "pizza pizza"
+        "pomidorowa pomidorowa"
+        "kanapki kanapki"
+        "makaron makaron"
+        "pierogi pierogi"
+        "ciasto ciasto"
+        "grid2 grid2"
+        "f1 f3";
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .nav a{
+        float: none;
+    }
+
+    .nav a {
+        float: right;
+        color: #EDE6F2;
+        text-align: center;
+        padding: 8px 9px;
+        text-decoration: none;
+        font-size: 11px;
+      }
+
+      .grid2{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-area: grid2;
+    }
+
+}
+
+.przywitanie {
+
+    grid-area: przywitanie;
+    padding: 10%;
+    text-align: center;
+    background: #A83F3F;
+    color: #EDE6F2;
+    font-size: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.przywitanie h1 {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    line-height: 46px;
+    font-size: 46px;
+    letter-spacing: 3px;
+    margin: 20px 0 43px 0;
+}
+
+.przywitanie p {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 0 23px 0;
+    text-align: justify;
+    border-bottom-style: solid;
+    border-bottom-color: #EDE6F2;
+    padding-bottom: 3%;
+}
+
+#b1 {
+    margin-bottom: 20px;
+}
+
+.przepispizza {
+    text-align: justify;
+    color: #EDE6F2;
+    grid-area: pizza;
+    padding: 10%;
+    height:auto;
+    margin-bottom: 5%;
+}
+
+.przepispizza h1{
+    text-align: left;
+}
+
+.pizza {
+    grid-area: pizzajpg;
+    margin: 5%;
+}
+
+.pizza img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+.przepiszupa{
+    text-align: justify;
+    grid-area: pomidorowa;
+    background-color: #A83F3F;
+    padding: 3%;
+}
+
+.przepiszupa h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.przepiszupa img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4%;
+    
+}
+
+.przepismakaron{
+    text-align: justify;
+    grid-area: makaron;
+    background-color: #A83F3F;
+    padding: 3%;
+}
+
+.przepismakaron h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.przepismakaron img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+.przepispierogi{
+    text-align: justify;
+    grid-area: pierogi;
+    background-color: #A83F3F;
+    padding: 3%;
+}
+
+.przepispierogi h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.przepispierogi img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+.ciasto{
+    text-align: justify;
+    grid-area: ciasto;
+    background-color: #A83F3F;
+    padding: 3%;
+}
+
+.ciasto h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.ciasto img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+.kanapki{
+    text-align: justify;
+    grid-area: kanapki;
+    background-color: #A83F3F;
+    padding: 3%;
+}
+
+.kanapki h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.kanapki img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+.footer2{
+    grid-area: f2;
+    background-color: #252627;
+}
+
+
+
+.footer3{
+    grid-area: f3;
+    background-color: #252627;
+    display: block;
+}
+
+.footer3 ul{
+    list-style-type: none;
+    margin-right: 5%;
+}
+
+.footer3 li{
+    float:right;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.content {
+    max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  }
+
+
+ * {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  width: 50px;
+  display: block;
+  z-index: 9;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  z-index: 9;
+  border: 3px solid #EDE6F2;
+}
+
+/* Add styles to the form container */
+.form-container {
+	max-width: 650px;
+	padding: 10px;
+    background-color: #746D75;
+    opacity: 0.9;
+}
+
+.form-container:hover{
+    opacity: 1;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container textarea {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #252627;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container textarea:focus {
+  background-color: #EDE6F2;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  	background-color: #8ACDEA;
+  	color: #EDE6F2;
+  	padding: 16px 20px;
+  	border: none;
+  	cursor: pointer;
+  	width: 100%;
+    margin-bottom:10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  	background-color: #f44336;
+}
+
+.form-container .btn:hover {
+	background-color: #252627;
+}
+
+.form-container .cancel:hover {
+	background-color: #252627;
+}
+
+#notFilled {
+	color: red;
+}
+
+
+.item{
+    text-align: center;
+    background-color: #A83F3F;
+    padding: 3%;
+}
+
+.item h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.item img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+#delicon{
+    width: 30px;
+    height: 30px;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    max-width: 100%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .flip-box:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /*Do an horizontal flip when you move the mouse over the flip box container 
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  */
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: transparent;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+  }
